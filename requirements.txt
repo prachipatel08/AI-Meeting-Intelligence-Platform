@@ -1,0 +1,34 @@
+# Python version: use the version agreed by the team (recommended: Python 3.11 or 3.12)
+# Install inside backend/.venv with: pip install -r requirements.txt
+
+# Django API
+Django>=5.2,<5.3
+djangorestframework>=3.16,<4.0
+django-cors-headers>=4.7,<5.0
+djangorestframework-simplejwt>=5.5,<6.0
+python-dotenv>=1.1,<2.0
+django-filter>=25.1,<26.0
+
+# MongoDB Atlas (accessed explicitly via PyMongo; not Django ORM)
+pymongo[srv]>=4.13,<5.0
+
+# AI / Groq
+groq>=0.30,<1.0
+
+# Background jobs and real-time support
+celery[redis]>=5.5,<6.0
+channels>=4.2,<5.0
+channels-redis>=4.2,<5.0
+redis>=6.0,<7.0
+
+# Export support
+reportlab>=4.4,<5.0
+python-docx>=1.2,<2.0
+
+# API schema/documentation
+drf-spectacular>=0.28,<1.0
+
+# Testing / quality
+pytest>=8.4,<9.0
+pytest-django>=4.11,<5.0
+coverage>=7.9,<8.0
